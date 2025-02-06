@@ -5,205 +5,265 @@
     <title>Авторские туры в Грузию</title>
 </head>
   <body>
-    <header>
-        <img src="images/logoSuliTravel.png" alt="Логотип" width="150" height="150">
+    <header class="header">
+        <img class="header__logo" src="images/logosulitravel.png" alt="Логотип" width="150" height="40">
         
-        <nav> 
-            <ul>
-                <li><a href="#">авторские туры</a></li>
-                <li><a href="#">о нас</a></li>
-                <li><a href="#">отчеты</a></li>
-                <li><a href="#">отзывы</a></li>
+        <nav class="header__menu"> 
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">авторские туры</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">о нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">отчеты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">отзывы</a>
+                </li>
             </ul> 
         </nav>
-        <div>
-            <ul>
-                <li><a href="#"><img src="images/iconinst.png" alt="иконка инстаграм"></a></li>
-                <li><a href="#"><img src="images/iconyoutube.png" alt="иконка ютуб"></a></li>
-                <li><a href="#"><img src="images/icontg.png" alt="иконка телеграм"></a></li>
-                <li><a href="#"><img src="images/iconwa.png" alt="иконка wants app"></a></li>
+        <div class="header__social-media">
+            <ul class="social-media">
+                <li class="social-media__item">
+                    <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconinst.png" alt="иконка инстаграм"></a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconyoutube.png" alt="иконка ютуб"></a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="#"><img class="social-media__icon" src="images/icontg.png" alt="иконка телеграм"></a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconwa.png" alt="иконка wants app"></a>
+                </li>
             </ul> 
         </div>
-        <p>+7 999 000 00 00</p>
+        <p class="header__phone">+7 999 000 00 00</p>
 
     </header>
-    <main>
-        <section>
-                <h1> АВТОРСКИЕ ТУРЫ В ГРУЗИЮ</h1>
-                <p> Погрузитесь в захватывающий мир Грузии, исследуя живописные пейзажи, богатую культуру и кухню этой уникальной страны. Присоединяйтесь к нам, чтобы создать свои собственные незабываемые воспоминания — каждый маршрут уникален, как и вы!</p>
-                <img src="images/main_screen.png" alt="Изображение главного экрана">
+    <main class="main">
+        <section class="first-screen">
+                <h1 class="first-screen__titel"> АВТОРСКИЕ ТУРЫ В ГРУЗИЮ</h1>
+                <p class="first-screen__desc"> Погрузитесь в захватывающий мир Грузии, исследуя живописные пейзажи, богатую культуру и кухню этой уникальной страны. Присоединяйтесь к нам, чтобы создать свои собственные незабываемые воспоминания — каждый маршрут уникален, как и вы!</p>
+                <img class="first-screen__photo" src="images/main_screen.png" alt="Изображение главного экрана">
         </section>
-        <section>
-            <div>
-                <h2>ПОПУЛЯРНЫЕ ТУРЫ</h2>
-                <a href="#" target="_blank">ВСЕ ТУРЫ</a><!-- кнопка со стрелкой -->
-            </div>
-                <ul>
-                    <li>
-                        <img src="images/soulofGeorgia.png" alt="Душа Грузии: лучшее за 6 дней">
-                        <h3>ДУША ГРУЗИИ: ЛУЧШЕЕ ЗА 6 ДНЕЙ</h3>
-                        <p>Идеальное первое знакомство с Грузией. Тбилиси, Казбеги, Кахетия, древние монастыри, хинкали в горах и вино в Алазанской долине. Путешествие сочетает культуру, природу и гастрономию</p>
+        <section class="popular-tours">
+                <h2 class="popular-tours__title">ПОПУЛЯРНЫЕ ТУРЫ</h2>
+                <a class="popular-tours__button" href="#" target="_blank">ВСЕ ТУРЫ</a><!-- кнопка со стрелкой -->
+                <ul class="tours">
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/soulofgeorgia.png" alt="Душа Грузии: лучшее за 6 дней">
+                        <h3 class="tours__name">ДУША ГРУЗИИ: ЛУЧШЕЕ ЗА 6 ДНЕЙ</h3>
+                        <p class="tours__desc">Идеальное первое знакомство с Грузией. Тбилиси, Казбеги, Кахетия, древние монастыри, хинкали в горах и вино в Алазанской долине. Путешествие сочетает культуру, природу и гастрономию</p>
                         <!-- вся карточка должна быть ссылкой -->
                     </li>
-                    <li>
-                        <img src="images/wineroadsofkakheti.png" alt="Винные дороги Кахетии">
-                        <h3>ВИННЫЕ ДОРОГИ КАХЕТИИ</h3>
-                        <p>Посетим уютные семейные винодельни, монастыри Алаверди и Бодбе, пройдемся по улочкам Сигнахи, полюбуемся Алазанской долиной и попробуем настоящий шашлык на виноградных ветках.</p>
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/wineroadsofkakheti.png" alt="Винные дороги Кахетии">
+                        <h3 class="tours__name">ВИННЫЕ ДОРОГИ КАХЕТИИ</h3>
+                        <p class="tours__desc">Посетим уютные семейные винодельни, монастыри Алаверди и Бодбе, пройдемся по улочкам Сигнахи, полюбуемся Алазанской долиной и попробуем настоящий шашлык на виноградных ветках.</p>
                     </li>
-                    <li>
-                        <img src="images/svaneti.png" alt="Сванетия: в краю башен и ледников">
-                        <h3>СВАНЕТИЯ: В КРАЮ БАШЕН И ЛЕДНИКОВ</h3>
-                        <p>Экспедиция в самую загадочную часть Грузии – Сванетию. Узнаем легенды средневековых башен, попробуем настоящий кубдари, увидим ледник Шхара и покорим горные тропы.</p>
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/svaneti.png" alt="Сванетия: в краю башен и ледников">
+                        <h3 class="tours__name">СВАНЕТИЯ: В КРАЮ БАШЕН И ЛЕДНИКОВ</h3>
+                        <p class="tours__desc">Экспедиция в самую загадочную часть Грузии – Сванетию. Узнаем легенды средневековых башен, попробуем настоящий кубдари, увидим ледник Шхара и покорим горные тропы.</p>
                     </li>
-                    <li>
-                        <img src="images/mysteriousimereti.png" alt="Таинственная Имеретия">
-                        <h3>ТАИНСТВЕННАЯ ИМПЕРЕТИЯ</h3>
-                        <p>Путешествие в регион древнего Колхидского царства. Каньоны Окаце и Мартвили, сталактитовые пещеры Прометея, монастырь Гелати и вкуснейшая кухня Имеретии.</p>
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/mysteriousimereti.png" alt="Таинственная Имеретия">
+                        <h3 class="tours__name">ТАИНСТВЕННАЯ ИМПЕРЕТИЯ</h3>
+                        <p class="tours__desc">Путешествие в регион древнего Колхидского царства. Каньоны Окаце и Мартвили, сталактитовые пещеры Прометея, монастырь Гелати и вкуснейшая кухня Имеретии.</p>
                     </li>
-                    <li>
-                        <img src="images/gastrotour.png" alt="Гастротур: Грузия на вкус">
-                        <h3>ГАСТРОТУР: ГРУЗИЯ НА ВКУС</h3>
-                        <p>Путешествие для гурманов по лучшим ресторанам, винодельням и домашним кухням Грузии. Хачапури по-аджарски, мегрельские сыры, тушетская баранина и легендарный кахетинский шашлык.</p>
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/gastrotour.png" alt="Гастротур: Грузия на вкус">
+                        <h3 class="tours__name">ГАСТРОТУР: ГРУЗИЯ НА ВКУС</h3>
+                        <p class="tours__desc">Путешествие для гурманов по лучшим ресторанам, винодельням и домашним кухням Грузии. Хачапури по-аджарски, мегрельские сыры, тушетская баранина и легендарный кахетинский шашлык.</p>
                     </li>
-                    <li>
-                        <img src="images/adjara.png" alt="Аджария: море, горы и аджапсандали">
-                        <h3>АДЖАРИЯ: МОРЕ, ГОРЫ И АДЖАПСАНДАЛИ</h3>
-                        <p>Микс морского отдыха и горных приключений. Батумский променад, Махунцети с его водопадами и арочным мостом, Зеленый мыс, тропический ботанический сад и фермерские сыроварни.</p>
+                    <li class="tours__card">
+                        <img class="tours__image" src="images/adjara.png" alt="Аджария: море, горы и аджапсандали">
+                        <h3 class="tours__name">АДЖАРИЯ: МОРЕ, ГОРЫ И АДЖАПСАНДАЛИ</h3>
+                        <p class="tours__desc">Микс морского отдыха и горных приключений. Батумский променад, Махунцети с его водопадами и арочным мостом, Зеленый мыс, тропический ботанический сад и фермерские сыроварни.</p>
                     </li>
                 </ul>
         </section>
-        <section>
-        <h2>ЧТО ВКЛЮЧЕНО В ТУР</h2>
-        <div>
-          <div>
-            <img src="images/home.png" alt="иконка дом">
-            <h3>Проживание</h3>
-            <p>Гостиница в центре Тбилиси (завтраки включены)</p>
+        <section class="included">
+        <h2 class="included__title">ЧТО ВКЛЮЧЕНО В ТУР</h2>
+        <div class="included__union">
+          <div class="included__card">
+            <img class="included__icon" src="images/home.png" alt="иконка дом">
+            <h3 class="included__name">Проживание</h3>
+            <p class="included__desc">Гостиница в центре Тбилиси (завтраки включены)</p>
           </div>
-          <div>
-            <img src="images/cutlery.png" alt="иконка столовые приборы">
-            <h3>Питание</h3>
-            <p>Обеды в экскурсионные дни</p>
+          <div class="included__card">
+            <img class="included__icon" src="images/cutlery.png" alt="иконка столовые приборы">
+            <h3 class="included__name">Питание</h3>
+            <p class="included__desc">Обеды в экскурсионные дни</p>
           </div>
-          <div>
-            <img src="images/transport.png" alt="иконка транспорт">
-            <h3>Трансфер</h3>
-            <p>В стоимость включено всё транспортное сопровождение</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="images/map.png" alt="иконка карта">
-            <h3>Экскурсионная программа</h3>
-            <p>Экскурсии с гидом (входные билеты включены)</p>
-          </div>
-          <div>
-            <img src="images/group.png" alt="иконка группа">
-            <h3>Новые знакомства</h3>
-            <p>Вы познакомитесь не только с новой страной, но и заведёте новых друзей</p>
-          </div>
-          <div>
-            <img src="images/heart.png" alt="иконка сердце">
-            <h3>Яркие впечатления</h3>
-            <p>Дегустации вин и сыра, мастер класс Грузинской кухни и многое другое</p>
+          <div class="included__card">
+            <img class="included__icon" src="images/transport.png" alt="иконка транспорт">
+            <h3 class="included__name">Трансфер</h3>
+            <p class="included__desc">В стоимость включено всё транспортное сопровождение</p>
           </div>
         </div>
+        <div class="included__union">
+          <div class="included__card">
+            <img class="included__icon" src="images/map.png" alt="иконка карта">
+            <h3 class="included__name">Экскурсионная программа</h3>
+            <p class="included__desc">Экскурсии с гидом (входные билеты включены)</p>
+          </div>
+          <div class="included__card">
+            <img class="included__icon" src="images/group.png" alt="иконка группа">
+            <h3 class="included__name">Новые знакомства</h3>
+            <p class="included__desc">Вы познакомитесь не только с новой страной, но и заведёте новых друзей</p>
+          </div>
+          <div class="included__card">
+            <img class="included__icon" src="images/heart.png" alt="иконка сердце">
+            <h3 class="included__name">Яркие впечатления</h3>
+            <p class="included__desc">Дегустации вин и сыра, мастер класс Грузинской кухни и многое другое</p>
+          </div>
+        </div>
         </section>
-        <section>
-            <div>
-                <h2>ГРУЗИЯ НАШИМИ ГЛАЗАМИ</h2>
-                <a href="#" target="_blank">ФОТОГРАФИИ С ПОЕЗДОК</a><!-- кнопка со стрелкой -->
+        <section class="photo">
+            <div class="photo__union">
+                <h2 class="photo__title" >ГРУЗИЯ НАШИМИ ГЛАЗАМИ</h2>
+                <a class="photo__button" href="#" target="_blank">ФОТОГРАФИИ С ПОЕЗДОК</a><!-- кнопка со стрелкой -->
             </div>
-            <div>
-                <img src="images/photoreport_a.png" alt="фото 1">
-                <img src="images/photoreport_b.png" alt="фото 2">
+            <div class="photo__union">
+                <img class="photo__photo" src="images/photoreport_a.png" alt="фото 1">
+                <img class="photo__photo" src="images/photoreport_b.png" alt="фото 2">
             </div>
-            <div>
-                <img src="images/photoreport_c.png" alt="фото 3">
-                <img src="images/photoreport_d.png" alt="фото 4">
-                <img src="images/photoreport_e.png" alt="фото 5">
+            <div class="photo__union">
+                <img class="photo__photo" src="images/photoreport_c.png" alt="фото 3">
+                <img class="photo__photo" src="images/photoreport_d.png" alt="фото 4">
+                <img class="photo__photo" src="images/photoreport_e.png" alt="фото 5">
             </div>
         </section>
-        <section>
-        <h2>6 ПРИЧИН ОТПРАВИТЬСЯ С НАМИ - И НЕ ПОЖАЛЕТЬ</h2>
-            <h3>Авторские маршруты</h3>
-            <p>Мы создаем уникальные туры, которых нет в стандартных путеводителях</p>
-            <h3>Максимум аутентичности</h3>
-            <p>Показываем настоящую Грузию: колоритные деревни, секретные локации, атмосферные винодельни</p>
-            <h3>Локальные гиды</h3>
-            <p>Вас сопровождают не просто экскурсоводы, а люди, которые живут Грузией и знают ее секреты</p>
-            <img src="images/reasons.png" alt="фото блока преимуществ">
-            <h3>Маленькие группы</h3>
-            <p>Комфортное путешествие в компании единомышленников, без толп и суеты</p>
-            <h3>Гибкость маршрутов</h3>
-            <p>подстраиваемся под желания группы, оставляем пространство для спонтанных открытий.</p>
-            <h3>Безопасность и комфорт</h3>
-            <p>Продуманная логистика, проверенные отели и лучшие водители.</p>
+        <section class="advantages">
+        <h2 class="advantages__title">6 ПРИЧИН ОТПРАВИТЬСЯ С НАМИ - И НЕ ПОЖАЛЕТЬ</h2>
+        <div class="advantages__union">
+            <h3 class="advantages__name">Авторские маршруты</h3>
+            <p class="advantages__desc">Мы создаем уникальные туры, которых нет в стандартных путеводителях</p>
+        </div>
+        <div class="advantages__union">
+            <h3 class="advantages__name">Максимум аутентичности</h3>
+            <p class="advantages__desc">Показываем настоящую Грузию: колоритные деревни, секретные локации, атмосферные винодельни</p>
+        </div>
+        <div class="advantages__union">
+            <h3 class="advantages__name">Локальные гиды</h3>
+            <p class="advantages__desc">Вас сопровождают не просто экскурсоводы, а люди, которые живут Грузией и знают ее секреты</p>
+        </div>
+            <img class="advantages__photo" src="images/reasons.png" alt="фото блока преимуществ">
+        <div class="advantages__union">
+            <h3 class="advantages__name">Маленькие группы</h3>
+            <p class="advantages__desc">Комфортное путешествие в компании единомышленников, без толп и суеты</p>
+        </div>
+        <div class="advantages__union">
+            <h3 class="advantages__name">Гибкость маршрутов</h3>
+            <p class="advantages__desc">подстраиваемся под желания группы, оставляем пространство для спонтанных открытий.</p>
+        </div>
+        <div class="advantages__union">
+            <h3 class="advantages__name">Безопасность и комфорт</h3>
+            <p class="advantages__desc">Продуманная логистика, проверенные отели и лучшие водители.</p>
+        </div>
         </section>
-        <section>
-            <h2>ОТЗЫВЫ</h2>
-            <figure>
-                <img src="images/alexey.png" alt="отзыв Алексей">
-                <figcaption>
-                    <p>АЛЕКСЕЙ</p>
-                    <p>Это было одно из самых впечатляющих путешествий в моей жизни! Сванетия – настоящий край легенд, величественных гор и невероятных людей. Нас принимали как родных, угощали ароматным кубдари и сванской солью, рассказывали истории, которые не прочитаешь в путеводителях. Сванетия – это не просто место на карте, это ощущение свободы, приключений и первозданной красоты. Огромное спасибо команде за организацию – все было четко, комфортно и без суеты. Если хотите увидеть настоящую Грузию – вам сюда!</p>
+        <section class="reviews">
+            <h2 class="reviews__title">ОТЗЫВЫ</h2>
+            <a class="reviews__button" href="#" target="_blank">ОТЗЫВЫ</a>
+            <figure class="reviews__card">
+                <img class="reviews__photo" src="images/alexey.png" alt="отзыв Алексей">
+                <figcaption class="reviews__union">
+                    <p class="reviews__name"> АЛЕКСЕЙ</p>
+                    <p class="reviews__desc">Это было одно из самых впечатляющих путешествий в моей жизни! Сванетия – настоящий край легенд, величественных гор и невероятных людей. Нас принимали как родных, угощали ароматным кубдари и сванской солью, рассказывали истории, которые не прочитаешь в путеводителях. Сванетия – это не просто место на карте, это ощущение свободы, приключений и первозданной красоты. Огромное спасибо команде за организацию – все было четко, комфортно и без суеты. Если хотите увидеть настоящую Грузию – вам сюда!</p>
                     </figcaption>
             </figure>
-            <figure>
+            <figure class="reviews__card">
                 <img src="images/natalia.png" alt="отзыв Наталья">
-                <figcaption>
-                    <p>НАТАЛЬЯ</p>
-                    <p>Я давно мечтала попасть в Кахетию, но даже не представляла, что путешествие окажется таким атмосферным и душевным. Винные дороги Грузии — это не просто дегустации, а целый ритуал, в котором смешаны история, культура и, конечно, невероятное гостеприимство. Мы пробовали вино в старинных марани, гуляли по виноградникам, ужинали в доме винодела.</p>
-                    <p>А еще мы научились готовить настоящие хинкали и хлеб шоти — теперь дома буду устраивать грузинские вечера.Этот тур — идеальный микс вкусной еды, хорошего вина и теплых встреч.</p>
+                <figcaptio class="reviews__union">
+                    <p class="reviews__name">НАТАЛЬЯ</p>
+                    <p class="reviews__desc">Я давно мечтала попасть в Кахетию, но даже не представляла, что путешествие окажется таким атмосферным и душевным. Винные дороги Грузии — это не просто дегустации, а целый ритуал, в котором смешаны история, культура и, конечно, невероятное гостеприимство. Мы пробовали вино в старинных марани, гуляли по виноградникам, ужинали в доме винодела.</p>
+                    <p class="reviews__desc">А еще мы научились готовить настоящие хинкали и хлеб шоти — теперь дома буду устраивать грузинские вечера.Этот тур — идеальный микс вкусной еды, хорошего вина и теплых встреч.</p>
                     </figcaption>
             </figure>
-            <figure>
+            <figure class="reviews__card">
                 <img src="images/anna_sergey.png" alt="отзыв Анна и Сергей">
-                <figcaption>
-                    <p>АННА И СЕРГЕЙ</p>
-                    <p>Батуми покорил нас своей атмосферой – колоритный старый город, вечерние прогулки по набережной, вкуснейшие хачапури по-аджарски с видом на закат… Но главные сюрпризы начались, когда мы отправились в горы! Водопад Махунцети – просто волшебство! Еще нас впечатлили фермерские сыроварни – мы узнали, как делают настоящий аджарский сыр, попробовали его с домашним вином и даже привезли с собой пару кусочков. Спасибо за этот тур – влюбились в Аджарию и обязательно вернемся!</p>
+                <figcaption class="reviews__union">
+                    <p class="reviews__name">АННА И СЕРГЕЙ</p>
+                    <p class="reviews__desc">Батуми покорил нас своей атмосферой – колоритный старый город, вечерние прогулки по набережной, вкуснейшие хачапури по-аджарски с видом на закат… Но главные сюрпризы начались, когда мы отправились в горы! Водопад Махунцети – просто волшебство! Еще нас впечатлили фермерские сыроварни – мы узнали, как делают настоящий аджарский сыр, попробовали его с домашним вином и даже привезли с собой пару кусочков. Спасибо за этот тур – влюбились в Аджарию и обязательно вернемся!</p>
                     </figcaption>
             </figure>
         </section>
-        <section>
-        <img src="images/intheend.png" alt="фоновое изображение блока с формой обратной связи">
-            <section> 
-                <form action="/">
-                    <h1>ЗАБРОНИРОВАТЬ ТУР</h1>
-                    <p>Заполните форму ниже и мы свяжемся с вами, чтобы рассказать о туре подробнее.</p>
-                    <input type="text" name="name" placeholder="Имя" required>
-                    <input type="tel" name="phone" placeholder="Телефон" required>
-                    <input type="email" name="email" placeholder="Почта" required>
-                    <button>Отправить</button>
+        <section class="feedback">
+        <img class="feedback__photo" src="images/intheend.png" alt="фоновое изображение блока с формой обратной связи"> 
+                <form class="feedback__form" action="/">
+                    <h1 class="feedback__title">ЗАБРОНИРОВАТЬ ТУР</h1>
+                    <p class="feedback__desc">Заполните форму ниже и мы свяжемся с вами, чтобы рассказать о туре подробнее.</p>
+                    <input class="feedback__input" type="text" name="name" placeholder="Имя" required>
+                    <input class="feedback__input" type="tel" name="phone" placeholder="Телефон" required>
+                    <input class="feedback__input" type="email" name="email" placeholder="Почта" required>
+                    <button class="feedback__button">Отправить</button>
                 </form>
-            </section>
         </section>
-    <footer>
-        <img src="iimages/footer.png" alt="фон футера">
-        <img src="images/footerlogoSuliTravel.png" alt="логотип в футере">
-        <p>Сайт создан Зверевй Ольгой владимировной СТ-24 и Самиром Тимурхановым СТ-23"</p>
-        <p>ТУРЫ</p>
-        <ul>
-            <li><a href="#">Календарь</a></li>
-            <li><a href="#">Отчеты</a></li>
-            <li><a href="#">Отзывы</a></li>
+    </main>
+    <footer class="footer">
+        <img class="footer__photo" src="images/footer.png" alt="фон футера">
+        <img class="footer__logo" src="images/footerlogosulitravel.png" alt="логотип в футере">
+        <p class="footer__desc">Сайт создан Зверевй Ольгой владимировной СТ-24 и Самиром Тимурхановым СТ-23"</p>
+        <div class="footer__menu">
+        <p class="footer__name">ТУРЫ</p>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__link" href="#">Календарь</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Отчеты</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Отзывы</a>
+            </li>
         </ul>
-        <p>ИНФОРМАЦИЯ</p> 
-        <ul>
-            <li><a href="#">Способ оплаты</a></li>
-            <li><a href="#">Договор оферрты</a></li>
-            <li><a href="#">Политика конфеденциальности</a></li>
+        </div>
+        <div class="footer__menu">
+        <p lass="footer__name">ИНФОРМАЦИЯ</p> 
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__link" href="#">Способ оплаты</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Договор оферрты</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Политика конфеденциальности</a>
+            </li>
         </ul>
-        <p>КОНТАКТЫ</p> 
-        <ul>
-            <li><a href="#">+7 999 000 00 00</a></li>
-            <li><a href="#">SuliTrevel@gmail.com</a></li>
-            <li><a href="#">Политика конфеденциальности</a></li>
-            <li><a href="#"><img src="images/iconinst.png" alt="иконка инстаграм"></a></li>
-            <li><a href="#"><img src="images/iconyoutube.png" alt="иконка ютуб"></a></li>
-            <li><a href="#"><img src="images/icontg.png" alt="иконка телеграм"></a></li>
-            <li><a href="#"><img src="images/iconwa.png" alt="иконка wants app"></a></li>
+        </div>
+        <div class="footer__menu">
+        <p class="footer__name">КОНТАКТЫ</p> 
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__link" href="#">+7 999 000 00 00</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">SuliTrevel@gmail.com</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Политика конфеденциальности</a>
+            </li>
+            <ul class="social-media">
+            <li class="social-media__item">
+                <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconinst.png" alt="иконка инстаграм"></a>
+            </li>
+            <li class="social-media__item">
+                <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconyoutube.png" alt="иконка ютуб"></a>
+            </li>
+            <li class="social-media__item">
+                <a class="social-media__link" href="#"><img class="social-media__icon" src="images/icontg.png" alt="иконка телеграм"></a>
+            </li>
+            <li class="social-media__item">
+                <a class="social-media__link" href="#"><img class="social-media__icon" src="images/iconwa.png" alt="иконка wants app"></a>
+            </li>
+            </ul>
         </ul>
+        </div>
     </footer>
    </body>
 </html>
