@@ -1,0 +1,217 @@
+.first-screen {
+    position: relative;
+    width: 100%;
+    height: 704px;
+    background-image: url('../images/main_screen.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#F9F9F9 ;
+}
+.first-screen h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.first-screen p {
+    font-size: 20px;
+    max-width: 900px;
+}
+.tours__cards {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    }
+.caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.caption h2 {
+    font-size: 42px;
+}
+
+.tours__card-a {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/soulofgeorgia.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-b {
+    width: 346px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/wineroadsofkakheti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 220px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+.tours__card-c {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/svaneti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+
+.tours__card-d {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/mysteriousimereti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-e {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/gastrotour.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name-e {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 230px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-f {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/adjara.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.included__union {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none; 
+}
+.photo__union {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.included__card{
+    display: flex;
+    align-items: center;
+}
+.wrap-right {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+   
+}
