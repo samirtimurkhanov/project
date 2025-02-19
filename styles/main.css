@@ -212,6 +212,40 @@
 .wrap-right {
     display: flex;
     flex-direction: column;
-    width: 330px;
-   
 }
+.wrap-right {
+    width: 300px;
+}
+.reviews__cards {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    }
+    .reviews__union-a {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/alexey.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+    }
+    .reviews__name {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 280px;
+        margin-bottom: 2px;
+    }
+    .reviews__desc {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
