@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторские туры в Грузию</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
   <body>
-    <header class="header">
+    <header class="header container">
         <img class="header__logo" src="images/logosulitravel.png" alt="Логотип" width="150" height="40">
         
         <nav class="header__menu"> 
@@ -43,50 +45,48 @@
         <p class="header__phone">+7 999 000 00 00</p>
 
     </header>
-    <main class="main">
+    <main class="main container">
         <section class="first-screen">
                 <h1 class="first-screen__titel"> АВТОРСКИЕ ТУРЫ В ГРУЗИЮ</h1>
                 <p class="first-screen__desc"> Погрузитесь в захватывающий мир Грузии, исследуя живописные пейзажи, богатую культуру и кухню этой уникальной страны. Присоединяйтесь к нам, чтобы создать свои собственные незабываемые воспоминания — каждый маршрут уникален, как и вы!</p>
-                <img class="first-screen__photo" src="images/main_screen.png" alt="Изображение главного экрана">
+                <!-- <img class="first-screen__photo" src="images/main_screen.png" alt="Изображение главного экрана"> -->
         </section>
-        <section class="popular-tours">
+        <section class="popular-tours container">
                 <h2 class="popular-tours__title">ПОПУЛЯРНЫЕ ТУРЫ</h2>
-                <a class="popular-tours__button" href="#" target="_blank">ВСЕ ТУРЫ</a><!-- кнопка со стрелкой -->
+                <a class="popular-tours__button button" href="#" target="_blank">ВСЕ ТУРЫ</a><!-- кнопка со стрелкой -->
                 <ul class="tours">
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/soulofgeorgia.png" alt="Душа Грузии: лучшее за 6 дней">
+                    <div class="tours__cards">
+                    <li class="tours__card-a">
                         <h3 class="tours__name">ДУША ГРУЗИИ: ЛУЧШЕЕ ЗА 6 ДНЕЙ</h3>
                         <p class="tours__desc">Идеальное первое знакомство с Грузией. Тбилиси, Казбеги, Кахетия, древние монастыри, хинкали в горах и вино в Алазанской долине. Путешествие сочетает культуру, природу и гастрономию</p>
                         <!-- вся карточка должна быть ссылкой -->
                     </li>
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/wineroadsofkakheti.png" alt="Винные дороги Кахетии">
+                    <li class="tours__card-b">
                         <h3 class="tours__name">ВИННЫЕ ДОРОГИ КАХЕТИИ</h3>
                         <p class="tours__desc">Посетим уютные семейные винодельни, монастыри Алаверди и Бодбе, пройдемся по улочкам Сигнахи, полюбуемся Алазанской долиной и попробуем настоящий шашлык на виноградных ветках.</p>
                     </li>
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/svaneti.png" alt="Сванетия: в краю башен и ледников">
+                    <li class="tours__card-c">
                         <h3 class="tours__name">СВАНЕТИЯ: В КРАЮ БАШЕН И ЛЕДНИКОВ</h3>
                         <p class="tours__desc">Экспедиция в самую загадочную часть Грузии – Сванетию. Узнаем легенды средневековых башен, попробуем настоящий кубдари, увидим ледник Шхара и покорим горные тропы.</p>
                     </li>
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/mysteriousimereti.png" alt="Таинственная Имеретия">
+                </div>
+                <div class="tours__cards">
+                    <li class="tours__card-d">
                         <h3 class="tours__name">ТАИНСТВЕННАЯ ИМПЕРЕТИЯ</h3>
                         <p class="tours__desc">Путешествие в регион древнего Колхидского царства. Каньоны Окаце и Мартвили, сталактитовые пещеры Прометея, монастырь Гелати и вкуснейшая кухня Имеретии.</p>
                     </li>
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/gastrotour.png" alt="Гастротур: Грузия на вкус">
-                        <h3 class="tours__name">ГАСТРОТУР: ГРУЗИЯ НА ВКУС</h3>
+                    <li class="tours__card-e">
+                        <h3 class="tours__name-e">ГАСТРОТУР: ГРУЗИЯ НА ВКУС</h3>
                         <p class="tours__desc">Путешествие для гурманов по лучшим ресторанам, винодельням и домашним кухням Грузии. Хачапури по-аджарски, мегрельские сыры, тушетская баранина и легендарный кахетинский шашлык.</p>
                     </li>
-                    <li class="tours__card">
-                        <img class="tours__image" src="images/adjara.png" alt="Аджария: море, горы и аджапсандали">
+                    <li class="tours__card-f">
                         <h3 class="tours__name">АДЖАРИЯ: МОРЕ, ГОРЫ И АДЖАПСАНДАЛИ</h3>
                         <p class="tours__desc">Микс морского отдыха и горных приключений. Батумский променад, Махунцети с его водопадами и арочным мостом, Зеленый мыс, тропический ботанический сад и фермерские сыроварни.</p>
                     </li>
+                </div>
                 </ul>
         </section>
-        <section class="included">
+        <section class="included container">
         <h2 class="included__title">ЧТО ВКЛЮЧЕНО В ТУР</h2>
         <div class="included__union">
           <div class="included__card">
@@ -123,10 +123,10 @@
           </div>
         </div>
         </section>
-        <section class="photo">
+        <section class="photo container">
             <div class="photo__union">
                 <h2 class="photo__title" >ГРУЗИЯ НАШИМИ ГЛАЗАМИ</h2>
-                <a class="photo__button" href="#" target="_blank">ФОТОГРАФИИ С ПОЕЗДОК</a><!-- кнопка со стрелкой -->
+                <a class="photo__button button" href="#" target="_blank">ФОТОГРАФИИ С ПОЕЗДОК</a><!-- кнопка со стрелкой -->
             </div>
             <div class="photo__union">
                 <img class="photo__photo" src="images/photoreport_a.png" alt="фото 1">
@@ -138,7 +138,7 @@
                 <img class="photo__photo" src="images/photoreport_e.png" alt="фото 5">
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages container">
         <h2 class="advantages__title">6 ПРИЧИН ОТПРАВИТЬСЯ С НАМИ - И НЕ ПОЖАЛЕТЬ</h2>
         <div class="advantages__union">
             <h3 class="advantages__name">Авторские маршруты</h3>
@@ -166,9 +166,9 @@
             <p class="advantages__desc">Продуманная логистика, проверенные отели и лучшие водители.</p>
         </div>
         </section>
-        <section class="reviews">
+        <section class="reviews container">
             <h2 class="reviews__title">ОТЗЫВЫ</h2>
-            <a class="reviews__button" href="#" target="_blank">ОТЗЫВЫ</a>
+            <a class="reviews__button button" href="#" target="_blank">ОТЗЫВЫ</a>
             <figure class="reviews__card">
                 <img class="reviews__photo" src="images/alexey.png" alt="отзыв Алексей">
                 <figcaption class="reviews__union">
@@ -204,49 +204,46 @@
                 </form>
         </section>
     </main>
-    <footer class="footer">
-        <img class="footer__photo" src="images/footer.png" alt="фон футера">
+    <footer class="footer  container">
         <img class="footer__logo" src="images/footerlogosulitravel.png" alt="логотип в футере">
-        <p class="footer__desc">Сайт создан Зверевй Ольгой владимировной СТ-24 и Самиром Тимурхановым СТ-23"</p>
+        <p class="footer__desc">Сайт создан Зверевй Ольгой СТ-24 и Самиром Тимурхановым СТ-23"</p>
         <div class="footer__menu">
         <p class="footer__name">ТУРЫ</p>
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu__link" href="#">Календарь</a>
+        <ul class="footer-menu">
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Календарь</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Отчеты</a>
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Отчеты</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Отзывы</a>
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Отзывы</a>
             </li>
         </ul>
         </div>
         <div class="footer__menu">
         <p lass="footer__name">ИНФОРМАЦИЯ</p> 
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu__link" href="#">Способ оплаты</a>
+        <ul class="footer-menu">
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Способ оплаты</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Договор оферрты</a>
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Договор оферрты</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Политика конфеденциальности</a>
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Политика конфеденциальности</a>
             </li>
         </ul>
         </div>
         <div class="footer__menu">
         <p class="footer__name">КОНТАКТЫ</p> 
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu__link" href="#">+7 999 000 00 00</a>
+        <ul class="footer-menu">
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">+7 999 000 00 00</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">SuliTrevel@gmail.com</a>
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">SuliTrevel@gmail.com</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Политика конфеденциальности</a>
             </li>
             <ul class="social-media">
             <li class="social-media__item">
