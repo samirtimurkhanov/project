@@ -9,6 +9,7 @@
     justify-content: center;
     text-align: center;
     color:#F9F9F9 ;
+    background-size: cover;
 }
 .first-screen h1 {
     font-size: 64px;
@@ -19,6 +20,9 @@
     font-size: 20px;
     max-width: 900px;
 }
+.tours {
+    padding:0;
+}
 .tours__cards {
     margin: 0;
     padding: 20px 0;
@@ -26,7 +30,19 @@
     gap: 20px;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: center;
     }
+.caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.caption h2 {
+    font-size: 42px;
+}
+
 .tours__card-a {
     width: 347px;
     height: 410px;
@@ -178,3 +194,117 @@
     margin-bottom: 10px;
     line-height: 15px;
 }
+.included__union {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none; 
+}
+.photo__union {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.included__card{
+    display: flex;
+    align-items: center;
+}
+.wrap-right {
+    display: flex;
+    flex-direction: column;
+}
+.wrap-right {
+    width: 300px;
+}
+.reviews .container {
+    display: flex;
+}
+.reviews__cards {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    }
+    .reviews__card-a {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/alexey.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+    }
+    .reviews__name {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 310px;
+        margin-bottom: 10px;
+    }
+    .reviews__desc {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
+    .reviews__card-b {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/natalia.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+    }
+    .reviews__name-b {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 300px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews__desc-b {
+        
+    }
+    .reviews__card-c {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/anna_sergey.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+    }
+    .reviews__card-c h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 330px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews__desc-c {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 200px;
+        line-height: 15px;
+        
+    }
