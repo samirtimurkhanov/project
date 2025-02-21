@@ -194,6 +194,14 @@
     margin-bottom: 10px;
     line-height: 15px;
 }
+.included {
+    padding: 20px 0;
+}
+.included p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+}
 .included__union {
     margin: 0;
     padding: 20px 0;
@@ -201,6 +209,9 @@
     gap: 20px;
     flex-wrap: wrap;
     list-style-type: none; 
+}
+.included__union h3 {
+    margin: 0;
 }
 .photo__union {
     margin: 0;
@@ -213,21 +224,37 @@
 .included__card{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .wrap-right {
     display: flex;
     flex-direction: column;
 }
 .wrap-right {
-    width: 300px;
+    width: 255px;
+}
+.wrap-right h3 {
+    line-height: 22px;
+}
+.advantages h3 {
+    margin: 0;
+}
+.advantages p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+}
+.advantages__union {
+    width: 280px;
 }
 .reviews .container {
     display: flex;
 }
 .reviews__cards {
     margin: 0;
+    padding-bottom: 10cqh;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     list-style-type: none;
     }
@@ -241,6 +268,7 @@
         border-radius: 20px;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
         text-align: left;
+        margin: 0;
     }
     .reviews__name {
         font-size: 24px;
@@ -266,6 +294,7 @@
         border-radius: 20px;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
         text-align: left;
+        margin: 0;
     }
     .reviews__name-b {
         font-size: 24px;
@@ -303,6 +332,7 @@
         border-radius: 20px;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
         text-align: left;
+        margin: 0;
     }
     .reviews__card-c h3 {
         font-size: 24px;
