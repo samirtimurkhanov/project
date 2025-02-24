@@ -87,7 +87,14 @@
     border-radius: 20px;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
     text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
 }
+.tours__card-b:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+
 .tours__name {
     font-size: 24px;
     line-height: 28px;
@@ -112,6 +119,12 @@
     border-radius: 20px;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
     text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-c:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
 }
 .tours__name {
     font-size: 24px;
@@ -138,6 +151,12 @@
     border-radius: 20px;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
     text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-d:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
 }
 .tours__name {
     font-size: 24px;
@@ -163,6 +182,12 @@
     border-radius: 20px;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
     text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-e:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
 }
 .tours__name-e {
     font-size: 24px;
@@ -188,6 +213,12 @@
     border-radius: 20px;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
     text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-f:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
 }
 .tours__name {
     font-size: 24px;
@@ -432,3 +463,8 @@ padding-bottom: 10px;
         font-size: 16px;
         outline: none;
     }
+    .feedback__input {
+        transition: outline 0.1s;
+        }
+        .feedback__input:focus {
+        outline: 2px solid #00BB06;}
