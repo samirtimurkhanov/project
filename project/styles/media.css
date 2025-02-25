@@ -1,3 +1,10 @@
 @media only screen and (max-width: 768px) {
     /*тут обращение к классам*/
+    .container {
+        max-width: 100%;
     }
+    .header__menu {
+        flex-wrap: wrap;
+    }
+    }
+  

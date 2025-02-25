@@ -11,7 +11,9 @@
     .footer__logo {
         margin-right: 96px;
     }
-    
+  .social-media {
+    padding-inline-start: 0;
+  }
     .footer__menu {
         display: flex;
         flex-direction: column;
