@@ -3,8 +3,57 @@
     .container {
         max-width: 100%;
     }
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
     .header__menu {
         flex-wrap: wrap;
     }
+    .reviews__cards {
+        gap: 10px; /* Уменьшаем отступы между карточками */
+      }
+    .header__menu {
+            display: none; /* Скрываем меню на экранах до 768px */
     }
+    .header__phone {
+        display: none; /* Скрываем меню на экранах до 768px */
+}
+.footer__menu {
+    display: none; /* Скрываем меню на экранах до 768px */
+  }
+  .footer__name {
+    display: none; /* Скрываем меню на экранах до 768px */
+  }
+  .footer {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .footer p {
+        font-size: 16px; /* Размер шрифта */
+        position: static;
+  }
+
+    .social-media {
+        gap: 5vw;
+    }
+    .social-media__item img {
+        width: 40px;
+        height: 40px;
+}
+.footer__logo {
+    width: 30%; /* Изменяем ширину изображения на мобильных устройствах (80% от ширины контейнера) */
+  }
+  .advantages__photo {
+    display: none; /* Скрываем меню на экранах до 768px */
+  }
+  .advantages-a {
+    gap: 10px;
+  }
+  .advantages-b {
+    gap: 10px;
+  }
+}
   
