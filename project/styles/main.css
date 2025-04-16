@@ -259,16 +259,6 @@
 font-weight: 500;
 padding-bottom: 10px;
 }
-/* БЛОК ФОТО */
-.photo__union {
-    margin: 0;
-    padding: 10px 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: center;
-}
 .included__card{
     display: flex;
     align-items: center;
@@ -284,6 +274,17 @@ padding-bottom: 10px;
 .wrap-right h3 {
     line-height: 22px;
 }
+/* БЛОК ФОТО */
+.photo__union {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
 /* БЛОК ПРЕИМУЩЕСТВ */
 
 .advantages__title {
