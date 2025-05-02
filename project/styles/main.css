@@ -1,0 +1,589 @@
+/* ПЕРВЫЙ ЭКРАН */
+.first-screen {
+    position: relative;
+    width: 100%;
+    height: 704px;
+    background-image: url('../images/main_screen.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#F9F9F9 ;
+    background-size: cover;
+} 
+.first-screen h1 {
+    font-size: 64px;
+    line-height: 66px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.first-screen p {
+    font-size: 20px;
+    max-width: 900px;
+}
+/* БЛОК ПОПУЛРЯНЫХ ТУРОВ */
+.tours {
+    padding:0;
+}
+.tours__cards {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    }
+.caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+.caption h2 {
+    font-size: 42px;
+    line-height: 44px;
+}
+
+.tours__card-a {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/soulofgeorgia.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-a:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-b {
+    width: 346px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/wineroadsofkakheti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-b:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 220px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+.tours__card-c {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/svaneti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-c:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+
+.tours__card-d {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/mysteriousimereti.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-d:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-e {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/gastrotour.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-e:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+.tours__name-e {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 230px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+.tours__card-f {
+    width: 347px;
+    height: 410px;
+    padding: 20px;
+    background-image: url('../images/adjara.png');
+    color:#F9F9F9;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    text-align: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавный эффект */
+}
+.tours__card-f:hover {
+    transform: scale(1.05); /* Увеличение карточки */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+}
+.tours__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 240px;
+    margin-bottom: 2px;
+}
+.tours__desc {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+/* БЛОК ЧТО ВКЛЮЧЕНО */
+.included {
+    padding: 20px 0;
+}
+.included p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+.included__union {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none; 
+    justify-content: center;
+}
+.included__union h3 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 24px;
+font-weight: 500;
+padding-bottom: 10px;
+}
+.included__card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.wrap-right {
+    display: flex;
+    flex-direction: column;
+}
+.wrap-right {
+    width: 255px;
+}
+.wrap-right h3 {
+    line-height: 22px;
+}
+/* БЛОК ФОТО */
+.photo__union {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+.photo__item-a {
+    width: 713px;
+    height: 320px;  
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    background-image: url('../images/photoreport_a.png');
+    color:#F9F9F9;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+.photo__item-a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('../images/photoreport_a.png');
+}
+.photo__item-b {
+    width: 347px;
+    height: 320px;  
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    background-image: url('../images/photoreport_b.png');
+    color:#F9F9F9;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+.photo__item-b:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('../images/photoreport_b.png');
+}
+.photo__item-c {
+    width: 347px;
+    height: 320px;  
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    background-image: url('../images/photoreport_c.png');
+    color:#F9F9F9;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+.photo__item-c:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('../images/photoreport_c.png');
+}
+.photo__item-d {
+    width: 347px;
+    height: 320px;  
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    background-image: url('../images/photoreport_d.png');
+    color:#F9F9F9;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+
+.photo__item-d:hover {
+ background: linear-gradient(rgba(0, 0, 0, 0.4)), url('../images/photoreport_d.png');
+}
+
+.photo__item-e {
+    width: 347px;
+    height: 320px;  
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    background-image: url('../images/photoreport_e.png');
+    color:#F9F9F9;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+.photo__item-e:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('../images/photoreport_e.png');
+}
+.photo__name {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* БЛОК ПРЕИМУЩЕСТВ */
+
+.advantages__title {
+    margin: 60px 0;
+    font-size: 40px;
+}
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+.advantages h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+.advantages p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+.advantages__union {
+    width: 330px;
+    text-align: center;
+}
+.advantages {
+ display: flex;   
+ justify-content: space-between; 
+}
+.advantages-a {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы вертикально */
+    justify-content: space-between;
+}
+.advantages-b {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы вертикально */
+    justify-content: space-between;
+}
+/* БЛОК ОТЗЫВЫ */
+.reviews .container {
+    display: flex;
+}
+.reviews__cards {
+    margin: 0;
+    padding-bottom: 10cqh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    }
+    .reviews__card-a {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/alexey.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+        margin: 0;
+    }
+    .reviews__name {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 310px;
+        margin-bottom: 10px;
+    }
+    .reviews__desc {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
+    .reviews__card-b {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/natalia.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+        margin: 0;
+    }
+    .reviews__name-b {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 230px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews__desc-b {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 15px;
+        color: black;
+    }
+    .reviews__desc-bb {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        line-height: 15px;
+        width: 140px;
+        color: black;
+    }
+    .reviews__card-c {
+        width: 347px;
+        height: 560px;
+        padding: 20px;
+        background-image: url('../images/anna_sergey.png');
+        color:#F9F9F9;
+        overflow: hidden; 
+        border-radius: 20px;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+        text-align: left;
+        margin: 0;
+    }
+    .reviews__card-c h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 330px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews__desc-c {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 200px;
+        line-height: 15px;   
+    }
+    .feedback {
+    height: 640px;
+    background-image: url('../images/intheend.png');
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    }
+    .feedback__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    }
+    .feedback h1 {
+        margin-bottom: 0; /* Отступ после заголовка */
+        font-size: 42px;
+    }
+    .feedback p {
+        margin-bottom: 24px; /* Отступ после описания */
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .feedback-union {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .feedback__input {
+        width: 437px;
+        height: 54px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        background-color: #FAFAFA;
+        padding: 16px;
+        font-size: 16px;
+        outline: none;
+    }
+    .feedback__input {
+        transition: outline 0.1s;
+        }
+        .feedback__input:focus {
+        outline: 2px solid #00BB06;}
+
+ .scroll-up  {
+    position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+  border: black;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.scroll-up--show {
+    display: block;
+    opacity: 1;
+  }
