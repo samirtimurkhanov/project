@@ -86,7 +86,7 @@ titlePhoto.forEach((item, index) => {
                });
         }
     
-// Динамическое формирование карточек.
+/* Динамическое формирование карточек.
 
 //Объявляем переменную cardsPrice и сохраняем в нее элемент с классом price
 const cardsTour = document.querySelector('.popular-tours');
@@ -150,7 +150,7 @@ for (const cardKey in cardsTourData) {
     // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка priceList.
                 tours.insertAdjacentHTML('beforeend', cardElement);
             }
-    }
+    }*/
     
 // Preloader страницы
 const preloader = document.querySelector('.preloader');
@@ -176,12 +176,12 @@ const preloader = document.querySelector('.preloader');
     const apiUrl = "data.json";
     // Функция для создания карточки
     const createCard = (
-        bgImageUrl,
+        bgClass,
         title,
         description,
     ) => {
         const card = `
-            <li class="tours__card" style="background-image: url('${bgImageUrl}'); width: 347px; height: 410px; background-size: cover; background-position: center;">
+                <li class="tours__card ${bgClass}" style="width: 347px; height: 410px;">
                 <h3 class="tours__name">${title}</h3>
                 <p class="tours__desc">${description}</p>
             </li>
@@ -197,7 +197,7 @@ const preloader = document.querySelector('.preloader');
 
             data.forEach((item) => {
                 const cardElement = createCard(
-                    item.bgImage,      
+                    item.bgClass,      
                     item.title,
                     item.description,
                 );
