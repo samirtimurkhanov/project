@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
  
 
-    // Объявляем переменную-массив intensiveImg и сохраняем в нее все элементы на странице с классом intensive__img  
+    // Объявляем переменную-массив photoItem и сохраняем в нее все элементы на странице с классом photo__item 
       const photoItem = document.querySelectorAll('.photo__item');
       photoItem.forEach((item, index) => {
         const photoText = document.querySelectorAll('.photo__name');
@@ -152,3 +152,59 @@ for (const cardKey in cardsTourData) {
             }
     }
     
+// Preloader страницы
+const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+
+            // Показываем контент
+            content.style.display = 'block';
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
+
+    //Создаем динамические карточки, загружая данные с сервера.
+    const cardsCon = document.querySelector(".popular-tours");
+    if (cardsCon) {
+    const cardList = cardsCon.querySelector(".tours__cards");
+    const apiUrl = "data.json";
+    // Функция для создания карточки
+    const createCard = (
+        bgImageUrl,
+        title,
+        description,
+    ) => {
+        const card = `
+            <li class="tours__card" style="background-image: url('${bgImageUrl}'); width: 347px; height: 410px; background-size: cover; background-position: center;">
+                <h3 class="tours__name">${title}</h3>
+                <p class="tours__desc">${description}</p>
+            </li>
+        `;
+        return card;
+    };
+    // Загрузка данных с сервера
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            console.log(typeof data);
+
+            data.forEach((item) => {
+                const cardElement = createCard(
+                    item.bgImage,      
+                    item.title,
+                    item.description,
+                );
+                cardList.insertAdjacentHTML("beforeend", cardElement);
+            });
+        })
+        .catch((error) => {
+            console.error("Ошибка при загрузке данных:", error);
+        });
+}
