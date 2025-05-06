@@ -26,7 +26,7 @@
 .button:hover::after {
     margin-left: 15px;
 }
-.feedback__button {
+.application__button {
     width: 437px;
     height: 44px;
     border-radius: 8px;
@@ -39,9 +39,9 @@
     margin-top: 40px; /* Отступ от полей */
     margin-bottom: 16px; /* Отступ снизу */
 }
-.feedback__button:hover {
+.application__button:hover {
     background-color: #00a206; /* Темнее при наведении */
 }
-.feedback__button:hover::after {
+.application__button:hover::after {
     width: 443px;
     height: 50px;}

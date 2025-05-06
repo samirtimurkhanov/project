@@ -208,3 +208,73 @@ const preloader = document.querySelector('.preloader');
             console.error("Ошибка при загрузке данных:", error);
         });
 }
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+
+if (sliders) {
+  const swiper1 = new Swiper(sliders, {
+    // Сколько карточек показывать одновременно
+    slidesPerView: 3,
+
+    // Сколько карточек пролистывать за раз
+    slidesPerGroup: 1,
+
+    // Расстояние между карточками (в пикселях)
+  
+
+    // Пагинация
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+      loop: false
+    },
+  });
+}
+
+//ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
+
+const formApplication = document.querySelector("#formApplication");
+
+if (formApplication) {
+  formApplication.addEventListener("submit", (event) => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const username = formApplication.querySelector("#username").value.trim();
+    const tel = formApplication.querySelector("#tel").value.trim();
+    const email = formApplication.querySelector("#email").value.trim();
+    const messageEl = document.querySelector("#application-message");
+
+    // Валидация имени
+    if (username.length < 3) {
+      messageEl.textContent = "Имя должно содержать не менее 3 символов.";
+      messageEl.style.color = "red";
+      return;
+    }
+
+    // Валидация телефона
+    if (!/^\d{10,}$/.test(tel)) {
+      messageEl.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов.";
+      messageEl.style.color = "red";
+      return;
+    }
+
+    // Валидация email (простая)
+    if (!email.includes("@") || !email.includes(".")) {
+      messageEl.textContent = "Пожалуйста, введите корректный адрес электронной почты.";
+      messageEl.style.color = "red";
+      return;
+    }
+
+    // Сохраняем данные в localStorage
+    localStorage.setItem("username", username);
+    localStorage.setItem("tel", tel);
+    localStorage.setItem("email", email);
+
+    messageEl.textContent = "Заявка отправлена!";
+    messageEl.style.color = "white";
+
+    // Очистка полей 
+    formApplication.reset();
+  });
+}
