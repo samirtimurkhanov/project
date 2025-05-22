@@ -46,3 +46,6 @@ img {
     font-weight: 500;
     line-height: 44px;
 }
+html {
+    scroll-behavior: smooth;
+  }
